@@ -10,5 +10,6 @@ export const TAILWIND_CLASS = {
   },
   CONTAINER: 'w-[80%] mx-auto text-center',
   LINK: 'underline duration-300 hover:opacity-60 hover:no-underline',
-  HOVER_SCALE: 'duration-300 hover:scale-85 hover:opacity-60'
+  HOVER_SCALE: 'duration-300 hover:scale-85 hover:opacity-60',
+  ROUTER_BASE: 'container mx-auto min-h-screen'
 }
