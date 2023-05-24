@@ -4,7 +4,7 @@ const NAVStyle = {
 
 export const NavBar = () => {
   return (
-    <div className="w-full flex flex-row bg-[#3e3e3e]">
+    <div className="w-full flex flex-row bg-[#3e3e3e] fixed top-0">
       <div className="w-full justify-start text-left">
         <a href="/" className={NAVStyle.BUTTON}>dethzGallery</a>
       </div>
