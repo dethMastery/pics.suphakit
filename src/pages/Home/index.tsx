@@ -7,7 +7,9 @@ export const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Home | dethzGallery</title>
+        <title>
+          Home | dethzGallery
+        </title>
       </Helmet>
       <div
         className={`${TAILWIND_CLASS.ROUTER_BASE} !w-full !pt-0 !bg-center !bg-no-repeat !bg-cover body-bg`}
