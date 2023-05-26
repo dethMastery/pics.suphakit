@@ -10,10 +10,10 @@ export const Home = () => {
         <title>Home | dethzGallery</title>
       </Helmet>
       <div
-        className={`${TAILWIND_CLASS.ROUTER_BASE} !pt-0 !bg-center !bg-no-repeat !bg-cover body-bg`}
+        className={`${TAILWIND_CLASS.ROUTER_BASE} !w-full !pt-0 !bg-center !bg-no-repeat !bg-cover body-bg`}
       >
         <div
-          className={`mx-auto w-full min-h-screen ${TAILWIND_CLASS.MID_FLEX}`}
+          className={`mx-auto w-full min-h-screen bg-overlay ${TAILWIND_CLASS.MID_FLEX}`}
         >
           <h1 className={TAILWIND_CLASS.HEADING.XXXL}>
             Hiya! This is{' '}
