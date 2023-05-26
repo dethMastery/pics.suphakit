@@ -9,6 +9,7 @@ export const NavBar = () => {
         <a href="/" className={NAVStyle.BUTTON}>dethzGallery</a>
       </div>
       <div className="w-full justify-end text-right">
+        <a href="/gallery" className={NAVStyle.BUTTON}>Gallery</a>
         <a href="/about" className={NAVStyle.BUTTON}>About</a>
       </div>
     </div>

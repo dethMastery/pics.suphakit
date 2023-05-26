@@ -9,8 +9,8 @@ export const TAILWIND_CLASS = {
     L: 'text-l py-2',
   },
   CONTAINER: 'w-[80%] mx-auto text-center',
-  LINK: 'underline duration-300 hover:opacity-60 hover:no-underline',
+  LINK: 'underline duration-300 hover:opacity-60 hover:decoration-dashed',
   HOVER_SCALE: 'duration-300 hover:scale-85 hover:opacity-60',
-  ROUTER_BASE: 'container mx-auto min-h-screen pt-16',
+  ROUTER_BASE: 'w-full mx-auto min-h-screen pt-16 md:w-[90%]',
   MID_FLEX: 'flex flex-col items-center justify-center text-center'
 }
