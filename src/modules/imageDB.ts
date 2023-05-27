@@ -8,7 +8,22 @@ interface galleryInterface {
 }
 
 export const LINK_BASE = (linkInput: string, imageNo: number) => {
-  return `https://ik.imagekit.io/dethzGallery/${linkInput}/dethz-${imageNo}_marked.jpeg`
+  let imageNumber = (imageNo + 1).toString()
+  
+  switch (imageNo.toString().length) {
+    case 1:
+      imageNumber = '00' + imageNumber
+      break
+
+    case 2:
+      imageNumber = '0' + imageNumber
+      break
+
+    default:
+      break
+  }
+
+  return `https://ik.imagekit.io/dethzGallery/${linkInput}/dethz-${imageNumber}_marked.jpeg`
 }
 
 export const GALLERY: galleryInterface[] = [
