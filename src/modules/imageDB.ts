@@ -10,7 +10,7 @@ export interface galleryInterface {
 export const LINK_BASE = (linkInput: string, imageNo: number) => {
   let imageNumber = (imageNo + 1).toString()
   
-  switch (imageNo.toString().length) {
+  switch (imageNumber.length) {
     case 1:
       imageNumber = '00' + imageNumber
       break
