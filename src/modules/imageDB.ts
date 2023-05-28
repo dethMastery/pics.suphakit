@@ -1,4 +1,4 @@
-interface galleryInterface {
+export interface galleryInterface {
   id: number
   name: string
   imageLink: string
