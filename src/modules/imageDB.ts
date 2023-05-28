@@ -7,7 +7,7 @@ export interface galleryInterface {
   thumbnailID: number
 }
 
-export const LINK_BASE = (linkInput: string, imageNo: number) => {
+export const LINK_BASE = (linkInput: string, imageNo: number): string => {
   let imageNumber = (imageNo + 1).toString()
   
   switch (imageNumber.length) {
