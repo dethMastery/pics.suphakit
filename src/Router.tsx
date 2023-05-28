@@ -22,7 +22,7 @@ export const Router = () => {
         <Route path={WEBSITE_PATH.ABOUT} element={<About />} />
 
         {GALLERY.map((route) => {
-          return <Route path={`${WEBSITE_PATH.GALLERY}/${route.pageSlug}`} element={<GalleryPreview itemData={route} />} />
+          return <Route path={`${WEBSITE_PATH.GALLERY}/${route.pageSlug}`} element={<GalleryPreview itemData={route} key={route.id} />} />
         })}
 
         <Route path='*' element={<NotFound />} />
