@@ -1,4 +1,4 @@
-interface galleryInterface {
+export interface galleryInterface {
   id: number
   name: string
   imageLink: string
@@ -7,8 +7,23 @@ interface galleryInterface {
   thumbnailID: number
 }
 
-export const LINK_BASE = (linkInput: string, imageNo: number) => {
-  return `https://ik.imagekit.io/dethzGallery/${linkInput}/dethz-${imageNo}_marked.jpeg`
+export const LINK_BASE = (linkInput: string, imageNo: number): string => {
+  let imageNumber = (imageNo + 1).toString()
+  
+  switch (imageNumber.length) {
+    case 1:
+      imageNumber = '00' + imageNumber
+      break
+
+    case 2:
+      imageNumber = '0' + imageNumber
+      break
+
+    default:
+      break
+  }
+
+  return `https://ik.imagekit.io/dethzGallery/${linkInput}/dethz-${imageNumber}_marked.jpeg`
 }
 
 export const GALLERY: galleryInterface[] = [
